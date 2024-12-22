@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JS DATATYPES</h2>
+    <script>
+        var a = 10;
+        var b = 70;
+        var c = 10;
+        var d = null;
+        var e;
+        document.write("a and c are equal:" + (a == c))
+        document.write("<br>");
+        document.write("a and b are equal:" + (a == b))
+        document.write("<br>");
+        document.write(e)
+        document.write("<br>");
+    </script>
+    <h3>CONDITIONAL STATEMENT</h3>
+    <button onclick="myfun()">CICK HERE</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myfun() {
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 12) {
+                greeting = "Good Morning...."
+            }
+            else if (time < 16) {
+                greeting = "Good Afternooon...."
+            }
+            else {
+                greeting = "Good Night..."
+            }
+
+            document.getElementById("hour").innerHTML = "current time-" + time;
+            document.getElementById("greet").innerHTML = greeting;
+        }
+    </script>
+            <h4>WHILE LOOP</h4>
+            <p id="para"></p>
+            <script>
+                var text = "";
+                var i = 0;
+                while (i < 10) {
+                    text += "<br>The number is -" + i;
+                    i++;
+                }
+                document.getElementById("para").innerHTML = text;
+            </script>
+
+</body>
+
+</html>
